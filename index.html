@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <title>Learning HTML & CSS</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px 1fr 1fr 100px; */
+            grid-template: 50px 1fr 1fr 100px / repeat(3, 1fr);
+
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container div {
+            padding: 10px;
+            border: 1px solid rgb(219, 216, 216);
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(16, 16, 211);
+            color: white;
+            text-align: center;
+        }
+
+        .content-large {
+            grid-row-start: 2;
+            grid-row-end: span 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .content-large p {
+            font-weight: normal;  
+            font-size: 15px;
+            background-color: rgb(226, 222, 222);
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            font-weight: normal;  
+            font-size: 15px;
+            }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+            }
+
+        .footer {
+            grid-column: 1 / span 3;
+        }
+        .footer img {
+            width: 163px;
+            height: 55px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    <h2>Learing HTML5 & CSS</h2>
+    <div class="container">
+        <div class="header">Learning  HTML5, CSS and Page Layout
+        </div>
+        <div class="content-large">
+            <table>
+                <tr>
+                  <th>Title</th>
+                  <th>Example</th>
+                  <th>Contents</th>
+                </tr>
+                <tr>
+                  <td>Grid View</td>
+                  <td><a href="/layout/grid_layout.html">Grid Example</a></td>
+                  <td>Web Page based on a Grid-View</td>
+                </tr>
+            </table>
+        </div>
+        <div class="content-small">
+            <img src="../images/2.gif" alt="image #1">
+            <p>Content #2</p>
+        </div>
+        <div class="content-small">
+            <img src="../images/5.gif" alt="image #2">
+            <p>Content #3</p>
+        </div>
+        <div class="footer"> 
+            <img src="../images/copyright.png" alt="copyright">    
+        </div>
+    </div>
 </body>
 </html>
