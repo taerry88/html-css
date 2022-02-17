@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="../css/uni-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="../images/tdf_logo3-tr.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Tiger and Dragon Family Company</h1>
+            <p>Making website is not easy thing to IT beginners.
+               But, if you learn HTML, CSS, <br> Javascript and you are able to make it easily. 
+            </p>
+            <a href="" class="hero-btn">Visit Us to know more</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>
+            Online Web Design Classes
+            <br>
+            Find what fascinates you as you explore these web design classes.
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>
+                    Take your Web skills to the next level and start building website.
+                    There are lots of 'HTML for Beginners' courses out there. This course will take 
+                    your basic HTML programming skills and teach you how to implement them in the 
+                    real world. Learn HTML with CSS and build website.
+
+                    Source codes are included for each lecture.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>
+                    Take your Web skills to the next level and start building website.
+                    There are lots of 'HTML for Beginners' courses out there. This course will take 
+                    your basic HTML programming skills and teach you how to implement them in the 
+                    real world. Learn HTML with CSS and build website.
+
+                    Source codes are included for each lecture.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>
+                    Take your Web skills to the next level and start building website.
+                    There are lots of 'HTML for Beginners' courses out there. This course will take 
+                    your basic HTML programming skills and teach you how to implement them in the 
+                    real world. Learn HTML with CSS and build website.
+
+                    Source codes are included for each lecture.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript for Toggle Menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

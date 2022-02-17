@@ -1,0 +1,14 @@
+1. Google Fonts
+   - https://fonts.google.com/specimen/Poppins?query=Poppins
+   - <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+2. font-awesome 4 cdn
+   - href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+
+3. Font Awesome icons
+   - https://fontawesome.com/v4/icons/    https://fontawesome.com/icons
+   - close : <i class="fa fa-times" aria-hidden="true"></i>
+
+   - menu : <i class="fa fa-bars" aria-hidden="true"></i>
